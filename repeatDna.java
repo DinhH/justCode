@@ -8,11 +8,11 @@ public class Solution {
    public List<String> findRepeatedDnaSequences(String s) {  
      List<String> result=new ArrayList<String>();  
      HashMap<Integer, Integer> map = new HashMap<Integer,Integer>();
-	for(int i = 0; i < = s.length() - 10 ; i++) {
+	for(int i = 0; i <= s.length() - 10 ; i++) {
 		String sub = s.substring(i, i+10);
 		int newKey = getKey(sub);
 		if(map.containskey(newKey)){
-			map.put(newKey,map.get(newKey)+1)  
+			map.put(newKey,map.get(newKey)+1);  
      			if(map.get(newKey) == 2){
 				result.add(sub);
 			}
@@ -27,30 +27,23 @@ public class Solution {
 		int result = 0;
 		for(int i = s.length()-1; i >= 0; i--) {
 			int match = 0;
-	j		switch(s.charAt(i)) {
+			switch(s.charAt(i)) {
 				case 'A':
-					b |= 0;
+					match |= 0;
 					break;
 				case 'T':
-					b |= 1;
+					match |= 1;
 					break;
 				case 'G':
-					b |= 2;
+					match |= 2;
 					break;
 				case 'C':
-					b |= 3;
+					match |= 3;
 					break;
 			}
-			result = b | result;
+			result = match | result;
 			result = result << 2;
 		}
 		return result;
 	}
 }
-				
-	
-	
-     return result;  
-   }  
- }  
-
