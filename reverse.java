@@ -1,3 +1,6 @@
+//updated the Java version
+//will work on C now.
+
 class Reverse{
 	
 	public String reverseStr( String str){
