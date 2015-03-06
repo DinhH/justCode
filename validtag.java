@@ -1,4 +1,4 @@
-c boolean isValid(String s) {
+boolean isValid(String s) {
         HashMap<Character, Character> map = new HashMap<Character, Character>();
         
         map.put('(', ')');
