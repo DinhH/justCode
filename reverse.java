@@ -2,6 +2,12 @@
 //will work on C now.
 
 class Reverse{
+
+	public void main(String[] args){
+		 Reverse obj = new Reverse();
+		 System.out.println(obj.reverseStr("hello world"));
+         System.out.println(obj.reverseStr("mihir"));
+	}
 	
 	public String reverseStr( String str){
 		char[] chars = str.toCharArray();
@@ -11,11 +17,5 @@ class Reverse{
 			chars[j] = temp;
 		}
 		return new String(chars);
-	}
-
-	public void main(String[] args){
-		 Reverse obj = new Reverse();
-		 System.out.println(obj.reverseStr("hello world"));
-         System.out.println(obj.reverseStr("mihir"));
 	}
 }
