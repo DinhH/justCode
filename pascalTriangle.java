@@ -1,3 +1,5 @@
+
+//Given numRows, generate the first numRows of Pascal's triangle.
 public ArrayList<ArrayList<Integer>> generate (int numRows) {
 	ArrayList<ArrayList<Integer>> ret = new ArrayList<ArrayList<Integer>>();
 
