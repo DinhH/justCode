@@ -8,8 +8,23 @@
 
 void push(int x) {
         s.push(x);
-        if (sMin.empty() || x < sMin.top())
+        if (sMin.empty() || x < sMin.top()){
             sMin.push(x);
+	}
         else
             sMin.push(sMin.top());
+}
+
+void pop(){
+	s.pop();
+	sMin.pop();
+}
+
+int top(){
+	return s.top();
+}
+
+int getMin(){
+	return sMin.top();
+}
 
