@@ -47,6 +47,6 @@ puublic class Solution{
 		}
 		reverse(pre,end.next);
 		return temp.next;
-}
+	}
 
     }
