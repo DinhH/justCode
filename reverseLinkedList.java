@@ -20,4 +20,33 @@ puublic class Solution{
             next.next=temp;
             
         }
+	public ListNode reverseList(ListNode head, int m, int n){
+		if (head == null || head.next == null){
+			return head;
+		}
+		ListNode temp = new ListNode(0);
+        	temp.next=head;
+			
+		ListNode pre = temp;
+		ListNode cur = head;
+		ListNode last = head;
+		
+		int retN = n;
+		int retM = m;
+		
+		while (retM < m || retN < n){
+			if(retM < m){
+				pre = pre.next;
+				cur = cur.next;
+				retM++;
+			}
+			if(retN < n){
+				end = end.next;
+				retN++;
+			}
+		}
+		reverse(pre,end.next);
+		return temp.next;
+}
+
     }
