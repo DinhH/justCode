@@ -19,3 +19,12 @@ public int getHeight(TreeNode root) {
 		return Math.max(left, right) + 1;
  
 	}
+
+	public boolean balance(TreeNode root){
+		if (root == null)
+			return true;
+		if (getHeight(root)==-1)
+			return false;
+		return true;
+	}
+}
